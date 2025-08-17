@@ -226,7 +226,8 @@
   let originalData = null;
 
   map.on('load', () => {
-    fetch('NYS_Assembly_districts_With_Data_F.geojson')
+    fetch('https://raw.githubusercontent.com/sagar2501588/NYC-Data/main/NYS_Assembly_districts_With_Data_F.geojson')
+
       .then(response => response.json())
       .then(data => {
         originalData = data;
